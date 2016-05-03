@@ -1,0 +1,25 @@
+
+{
+    "scripts": {
+        "build:stage":"npm run build:stage-wap && npm run build:stage-hybrid && node ../../base/pack.js --stage && npm run push:stage",
+        "build:prod":"npm run build:prod-wap && npm run build:prod-hybrid && node ../../base/pack.js --prod && npm run push:prod",
+        "build:b5m":"npm run build:b5m-wap && npm run build:b5m-hybrid && node ../../base/pack.js --b5m",
+
+
+        "build:stage-wap":"webpack --config ../../base/webpack.wap.js --progress --profile --colors --display-error-details --display-cached --bail  --stage ",
+        "build:prod-wap":"webpack --config ../../base/webpack.wap.js --progress --profile --colors --display-error-details --display-cached --bail  --prod ",
+        "build:b5m-wap":"webpack --config ../../base/webpack.wap.js --progress --profile --colors --display-error-details --display-cached --bail  --b5m ",
+        "build:stage-hybrid":"webpack --config ../../base/webpack.hybrid.js --progress --profile --colors --display-error-details --display-cached --bail  --stage ",
+        "build:prod-hybrid":"webpack --config ../../base/webpack.hybrid.js --progress --profile --colors --display-error-details --display-cached --bail  --prod ",
+        "build:b5m-hybrid":"webpack --config ../../base/webpack.hybrid.js --progress --profile --colors --display-error-details --display-cached --bail  --b5m ",
+
+        "start":"webpack-dev-server --inline --hot --progress --profile --colors --watch --display-error-details  --display-cached --config ../../base/webpack.dev.js --content-base src/",
+        "server:stage":"webpack-dev-server --inline --hot --progress --profile --colors --watch --display-error-details  --display-cached --config ../../base/webpack.dev.js --content-base src/ --stage",
+        "server:prod":"webpack-dev-server --inline --hot --progress --profile --colors --watch --display-error-details  --display-cached --config ../../base/webpack.dev.js --content-base src/ --prod",
+        "server:b5m":"webpack-dev-server --inline --hot --progress --profile --colors --watch --display-error-details  --display-cached --config ../../base/webpack.dev.js --content-base src/ --b5m",
+          
+        "push:stage":"node ../../base/push.js -- --stage111",
+        "push:prod":"node ../../base/push.js -- --prod"
+    }
+}
+

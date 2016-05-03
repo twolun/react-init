@@ -1,0 +1,26 @@
+{
+  "name": "react-init",
+  "version": "1.0.0",
+  "description": "react-init cli",
+  "main": "index.js",
+  "bin": {
+    "react-init": "bin/react-init.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twolun/react-init.git"
+  },
+  "keywords": [
+    "react",
+    "cli"
+  ],
+  "author": "2237993760@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twolun/react-init/issues"
+  },
+  "homepage": "https://github.com/twolun/react-init#readme"
+}
