@@ -1,7 +1,7 @@
 {
-  "name": "react-init",
+  "name": "reactpro-init",
   "version": "1.0.0",
-  "description": "react-init cli",
+  "description": "reactpro-init cli",
   "main": "index.js",
   "bin": {
     "react-init": "bin/react-init.js"
